@@ -40,3 +40,8 @@ Apply salt state (SLS) to minion 'ngnix001'
 salt      'ngnix001'      state.sls        shell_exec     saltenv=dev
 
 salt     'ngnix001'     state.show_sls     shell_exec     saltenv=dev
+
+
+For Artifactory_jinja
+salt 'ngnix001' slsutil.renderer /srv/saltstate/dev/artifactory_jinja/artifactory_download.sls saltenv=dev 'jinja'
+salt 'ngnix001' state.apply shell_exec saltenv=dev
