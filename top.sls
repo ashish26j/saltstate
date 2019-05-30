@@ -5,4 +5,5 @@ common:
 dev:
   'ngnix001':
     - shell_exec
-    - artifactory
+    #- artifactory
+    - artifactory_jinja
