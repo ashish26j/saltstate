@@ -43,5 +43,7 @@ salt     'ngnix001'     state.show_sls     shell_exec     saltenv=dev
 
 
 For Artifactory_jinja
+
 salt 'ngnix001' slsutil.renderer /srv/saltstate/dev/artifactory_jinja/artifactory_download.sls saltenv=dev 'jinja'
+
 salt 'ngnix001' state.apply shell_exec saltenv=dev
